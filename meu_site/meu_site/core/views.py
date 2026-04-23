@@ -1,4 +1,7 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("<h1>Bem vindo ao Django</h1>")
+    return render(request, 'core/home.html')
+
+def sobre(request):
+    return render(request, 'core/sobre.html')

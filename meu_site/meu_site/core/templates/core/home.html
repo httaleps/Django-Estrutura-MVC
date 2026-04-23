@@ -1,3 +1,4 @@
+<!-- core/template/core/home.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,6 +8,23 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>TechNova</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Início</a></li>
+                <li><a href="{% url 'sobre' %}">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bem vindo ao TechNova!</h2>
+        <p>Descubra as últimas novidades em tecnologia, análises de produtos e dicas para entusiastas de tecnologia. Fique por dentro das tendências e inovações que estão moldando o futuro.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechNova. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
